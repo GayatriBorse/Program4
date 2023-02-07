@@ -1,0 +1,39 @@
+Question :- 
+Given 3×3 matrix elements.Find the sum of both diagonal elements.
+
+Input Format
+
+3×3 matrix element in each line of input.(total 9 lines as '9 elements')
+
+Constraints
+
+1<=matrix element<=10
+
+Output Format
+
+output sum of both diagonal elements.
+
+Sample Input 0
+
+1 
+2
+3
+1
+3
+2
+3
+2
+1
+Sample Output 0
+14
+
+*****Code****
+
+arr =[]
+for i in range(9):
+    arr.append(int(input()))
+left = 0
+left = arr[0]+arr[4]+arr[8]
+right = arr[2]+arr[4]+arr[6]
+
+print(left+right)
